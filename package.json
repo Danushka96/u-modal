@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "vue-ustmodal",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Vue js Modal for VueJs",
   "main": "./dist/index.js",
   "scripts": {
@@ -18,5 +18,9 @@
     "bili": "^4.8.1",
     "rollup-plugin-vue": "^5.0.1",
     "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Danushka96/u-modal"
   }
 }
