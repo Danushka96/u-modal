@@ -1,0 +1,22 @@
+{
+  "private": false,
+  "name": "vue-ustmodal",
+  "version": "0.0.4",
+  "description": "Vue js Modal for VueJs",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vue serve NiceHandsomeButton.vue",
+    "build": "bili --name index --plugin vue --vue.css false"
+  },
+  "files": [
+    "dist/*" 
+  ],
+  "author": "Danushka",
+  "license": "ISC",
+  "devDependencies": {
+    "bili": "^4.8.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
