@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "vue-ustmodal",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Vue js Modal for VueJs",
   "main": "./dist/index.js",
   "scripts": {
