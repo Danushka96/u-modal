@@ -1,8 +1,7 @@
-import NiceHandsomeButton from "./NiceHandsomeButton.vue";
+import ustModal from "./ustModal.vue";
 
 export default {
     install(Vue, options) {
-        Vue.component("nice-handsome-button", NiceHandsomeButton);
-        
+        Vue.component("ustModal", ustModal);
     }
 };

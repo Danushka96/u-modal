@@ -1,11 +1,9 @@
 <template>
   <div>
-    <input type="text" :value="value" @click.native="$emit('input')"/>
-
     <!-- The Modal -->
-    <div v-if="value" id="myModal" class="modal">
+    <div v-if="value" id="myModal" class="modal" @click="close">
       <!-- Modal content -->
-      <div class="modal-content">
+      <div class="modal-content" :style="styles">
         <div class="modal-header">
           <span class="close" @click="close">&times;</span>
           <slot name="title"></slot>
@@ -23,19 +21,13 @@
 
 <script>
 export default {
-  props: ["value"],
+  props: ["value","styles"],
   mounted: function() {
     var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
-
-    span.onclick = function() {
-      modal.style.display = "none";
-    };
 
     window.onclick = function(event) {
       if (event.target == modal) {
-        modal.style.display = "none";
+        // modal.style.display = "none";
       }
     };
   },
@@ -107,7 +99,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: white;
+  /* color: white; */
   float: right;
   font-size: 28px;
   font-weight: bold;

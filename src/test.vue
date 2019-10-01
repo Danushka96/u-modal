@@ -3,7 +3,7 @@
     <div class="modal">
         <button @click="modal = true">Open</button>
         <button @click="modal = false">close</button>
-        <ustModal v-model.sync="modal"> 
+        <ustModal v-model.sync="modal" :styles="styles"> 
             <h3 slot="title">Custom Header</h3>
             <div slot="body">
                 <p>This is a test</p>
@@ -15,7 +15,7 @@
             <div slot="actions">
                 <button @click="model=false">Cancel</button>
                 <button @click="$emit('close')">OK</button>
-            </div>         
+            </div>
         </ustModal>
     </div>
 </div>
@@ -29,6 +29,9 @@ export default {
     },
     data: () =>  ({
         modal: true,
+        styles: {
+            width: "50px"
+        }
     }),
     methods: {
         input(data){
