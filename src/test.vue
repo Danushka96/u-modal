@@ -30,7 +30,7 @@ export default {
     data: () =>  ({
         modal: true,
         styles: {
-            width: "50px"
+            width: "500px"
         }
     }),
     methods: {

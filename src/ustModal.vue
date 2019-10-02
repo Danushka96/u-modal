@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- The Modal -->
-    <div v-if="value" id="myModal" class="modal" @click="close">
+    <div v-if="value" id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content" :style="styles">
         <div class="modal-header">
@@ -27,7 +27,7 @@ export default {
 
     window.onclick = function(event) {
       if (event.target == modal) {
-        // modal.style.display = "none";
+        modal.style.display = "none";
       }
     };
   },
