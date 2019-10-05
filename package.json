@@ -1,18 +1,29 @@
 {
   "private": false,
   "name": "vue-ustmodal",
-  "version": "0.1.2",
-  "description": "Vue js Modal for VueJs",
+  "version": "0.1.3",
+  "description": "Vue.js Modal",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vue serve NiceHandsomeButton.vue",
     "build": "bili --name index --plugin vue --vue.css false"
   },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue.js",
+    "vuejs2",
+    "modal",
+    "script",
+    "vue modal",
+    "modal js",
+    "javascript"
+  ],
   "files": [
     "dist/*" 
   ],
-  "author": "Danushka",
+  "author": "Danushka <danushkaherath96@gmail.com> (https://danushka96.github.io)",
   "license": "ISC",
   "devDependencies": {
     "bili": "^4.8.1",
@@ -21,6 +32,6 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/Danushka96/u-modal"
+    "url" : "https://github.com/Danushka96/vue-ustmodal"
   }
 }
